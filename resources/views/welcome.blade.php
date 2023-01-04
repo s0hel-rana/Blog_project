@@ -14,21 +14,22 @@
             <!-- Page Heading -->
             <div class="d-sm-flex align-items-center justify-content-between mb-4">
                 <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                        class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
             </div>
-            <div class="flex justify-center pt-8 sm:justify-start sm:pt-0" style="color: white">
-                @auth('admin')
-                    <a href=" {{ route('admin.dashboard') }} ">Admin Dashboard</a>
-                @else
-                    <a href=" {{ route('admin.login') }} ">Admin Login</a>
-                @endauth
-            </div>
-            <div class="flex justify-center pt-8 sm:justify-start sm:pt-0" style="color: white">
-                    <a href=" {{ route('login') }} ">User Login</a>
+            <div class="d-sm-flex align-items-center justify-content-between mb-4"">
+                <strong>
+                    <div>
+                        @auth('admin')
+                            <a href=" {{ route('admin.dashboard') }} ">Admin Dashboard</a>
+                        @else
+                            <a href=" {{ route('admin.login') }} " class="btn btn-warning shadow-sm">Admin Login</a>
+                        @endauth
+                        <a href=" {{ route('login') }} " class="btn btn-success shadow-sm">User Login</a>
+                    </div>
+                </strong>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
