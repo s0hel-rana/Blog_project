@@ -7,7 +7,7 @@
                          <div class="card-header">
                              <div class="row">
                                  <div class="col-md-6">
-                                     <h3 class="btn btn-info">Create Category</h3>
+                                     <a href="{{ route('category.index') }}" class="btn btn-info">Create Category</a>
                                  </div>
                                  <div class="col-md-6">
                                      <a href="{{ route('category.index') }}" class="btn btn-success pull-right">All Category</a>

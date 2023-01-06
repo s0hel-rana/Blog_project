@@ -1,5 +1,5 @@
 <x-master_admin>
-    <h2 class="mt-4 mb-4">Edit Category</h2>
+    <h2 class="mt-4 mb-4 ms-4">Edit Category</h2>
 
 <!-- message -->
 @if(session()->has('message'))

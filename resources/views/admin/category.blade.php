@@ -1,6 +1,6 @@
 <x-master_admin>
     
-   <h2 class="mt-4 ms-4 mb-4">All Category</h2>
+   <h2 class="mt-4 ms-4 mb-4">All Categories</h2>
 
 <!-- message -->
 @if(session()->has('message'))
