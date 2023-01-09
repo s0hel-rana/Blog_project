@@ -10,7 +10,7 @@
 <!-- end-message -->
 
 <!-- add form -->
-<form action="{{ route('category.store',$category->id) }}" method="POST">
+<form action="{{ route('category.update',$category->id) }}" method="POST">
     @csrf
     <div class="modal-body">
         <div class="message">

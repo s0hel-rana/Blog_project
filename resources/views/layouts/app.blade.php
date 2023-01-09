@@ -1,4 +1,37 @@
+
 <!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en-us">
+  @include('layouts.user.head')
+<body>
+  <!-- navigation -->
+@include('layouts.user.nabver')
+<!-- /navigation -->
+
+
+
+@yield('mainSection')
+
+
+@include('layouts.user.footer')
+
+@include('layouts.user.scripts')
+ 
+</body>
+</html>
+
+
+
+
+
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -33,4 +66,4 @@
             </main>
         </div>
     </body>
-</html>
+</html> --}}
